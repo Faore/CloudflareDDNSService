@@ -5,7 +5,7 @@ using System.ServiceProcess;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CFService
+namespace Faore.CFService
 {
     static class Program
     {
@@ -17,7 +17,7 @@ namespace CFService
             ServiceBase[] ServicesToRun;
             ServicesToRun = new ServiceBase[]
             {
-                new Service1()
+                new CloudflareService()
             };
             ServiceBase.Run(ServicesToRun);
         }

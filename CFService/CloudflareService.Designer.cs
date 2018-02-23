@@ -1,6 +1,6 @@
-﻿namespace CFService
+﻿namespace Faore.CFService
 {
-    partial class Service1
+    partial class CloudflareService
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,10 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
-            this.ServiceName = "Service1";
+            this.eventLog = new System.Diagnostics.EventLog();
+            ((System.ComponentModel.ISupportInitialize)(this.eventLog)).BeginInit();
+            // 
+            // eventLog
+            // 
+            this.eventLog.Log = "Application";
+            // 
+            // CloudflareService
+            // 
+            this.ServiceName = "Cloudflare DDNS Service";
+            ((System.ComponentModel.ISupportInitialize)(this.eventLog)).EndInit();
+
         }
 
         #endregion
+
+        private System.Diagnostics.EventLog eventLog;
     }
 }
